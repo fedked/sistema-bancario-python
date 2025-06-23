@@ -32,9 +32,9 @@ class ContaBancaria:
         if self.saldo >= valor_total:
             self.saldo -= valor_total
             conta_destino.depositar(valor) # Deposita apenas o valor
-            timestime = datetime.now().strftime('%d/%m/%Y %H:%M')
-            self.historico.append(f"{timestime} | Transferência enviada: -R${valor:.2f} (Taxa: R${taxa:.2f})")
-            conta_destino.historico.append(f" {timestime} | Transferência recebida: +R${valor:.2f}")
+            timestamp = datetime.now().strftime('%d/%m/%Y %H:%M')
+            self.historico.append(f"{timestamp} | Transferência enviada: -R${valor:.2f} (Taxa: R${taxa:.2f})")
+            conta_destino.historico.append(f" {timestamp} | Transferência recebida: +R${valor:.2f}")
             return True
         else:
             print(f"Saldo insuficiente! Necessário: R${valor_total:.2f}")
