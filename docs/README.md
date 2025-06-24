@@ -5,6 +5,8 @@ Simulação de operações bancárias (depósito, saque, extrato) com:
 - Validações de entrada
 - Histórico de transações
 - Gerenciamento de saldo
+- Transferência entre contas
+- Menu interativo via terminal
 
 ## Como Executar
 ```bash
